@@ -26,10 +26,8 @@ vandijk = function(graph, init_node) {
     unvisited_mask = graph[neighbor_mask, "v2"] %in% unvisited
     reduced_graph = graph[neighbor_mask, c("v2","w")][unvisited_mask, ]
 
-    d_i = distance[current_node]         # Distance of the current node i.
-    d_k = distance[reduced_graph[, "v2"]]   # Current distance of all the unvisited neighbors (k) of i.
-    d_ik = reduced_graph[, "w"]            # Distance from the node i to the node k.
-    distance[reduced_graph[, "v2"]] = pmin(d_k, d_i + d_ik)
+    d_i = distance[current_node]; d_k = distance[reduced_graph[, "v2"]]
+    d_ik = reduced_graph[, "w"] ; distance[reduced_graph[, "v2"]] = pmin(d_k, d_i + d_ik)
   }
   return(distance)
   }
