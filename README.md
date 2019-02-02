@@ -1,4 +1,6 @@
 
+[![Travis build status](https://travis-ci.org/nitinsverige/zrbc2feb19.svg?branch=master)](https://travis-ci.org/nitinsverige/zrbc2feb19)
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 zrbc2feb19
 ==========
