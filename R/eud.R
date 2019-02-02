@@ -16,8 +16,8 @@ eud <- function(x1,x2){
     }
     return(k)
   }
-  a = as.vector(tony(x1))
-  b = as.vector(tony(x2))
+  a = as.vector(tony(abs(x1)))
+  b = as.vector(tony(abs(x2)))
 
   ca = a %in% b
   caa= max(which(ca == TRUE))

@@ -13,5 +13,6 @@ URL: https://github.com/nitinsverige/zrbc2feb19
 BugReports: https://github.com/nitinsverige/zrbc2feb19/issues
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat
 VignetteBuilder: knitr
